@@ -101,5 +101,78 @@ for(let i = firstN; i <lastN; i++){
    sum += i;
 }
 alert(`Summ = ${sum}`);
-*/
 //-02
+let string = prompt("Input number");
+
+let num = 0;
+for(let i = 0; i < string.length; i++){
+   if (!isNaN(parseInt(string[i]))) {
+      num++;
+  }
+}
+alert(`You have numbers: ${num}`);
+//-03
+let stringUser = prompt("Input 10 numbers");
+let array = [];
+let string = "";
+
+// fill array
+for (let i = 0; i < stringUser.length; i++) {
+    if (stringUser[i] !== " ") {
+        string += stringUser[i];
+    } else {
+        array.push(string);
+        string = "";
+    }
+}
+
+// calculate
+let positive = 0;
+let negative = 0;
+let nulls = 0;
+let odd = 0;
+let even = 0;
+
+for (let i = 0; i < array.length; i++) {
+    // Use parseInt to convert the array element to a number
+    let num = parseInt(array[i]);
+
+    if (isNaN(num)) {
+        alert("Invalid input. Please enter numeric values.");
+        break;
+    }
+
+    if (num === 0) {
+        nulls++;
+    }
+    if (num > 0) {
+        positive++;
+    }
+    if (num < 0) {
+        negative++;
+    }
+    if (num % 2 === 0) {
+        even++;
+    }
+    if (num % 2 !== 0) {
+        odd++;
+    }
+}
+
+// Display results
+alert(`\"${stringUser}\"\nStatistic\npositive: ${positive}\nnegative: ${negative}\neven: ${even}\nodd: ${odd}\nnulls: ${nulls}`);
+//66 43 55 44 0 -9 -8 -7 -6 0
+*/
+//-04
+let daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+for (let i = 0; true; i++) {
+   let userInput = confirm("Day of week: " + daysOfWeek[i]);
+   if (!userInput) {
+      break;
+   }
+
+   if (i === daysOfWeek.length - 1) {
+      i = -1;
+   }
+}
