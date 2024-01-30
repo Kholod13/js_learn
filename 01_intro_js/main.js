@@ -1,9 +1,9 @@
+/*
 //console print
 console.log("Hello wold!");
 //task 01
 //-01
 // prompt - dialog window for input
-/*
 let year = prompt("Input your year");
 const age = 2024 - year;
 //alert - dialog window with buttons 'yes' and 'no'
