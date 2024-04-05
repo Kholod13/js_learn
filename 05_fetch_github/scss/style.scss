@@ -1,3 +1,13 @@
 .info-block{
    padding: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 50px;
+}
+label{
+   font-weight: bold;
+}
+img{
+   max-width: 150px;
+   padding-bottom: 20px;
 }
