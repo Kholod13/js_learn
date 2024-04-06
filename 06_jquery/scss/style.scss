@@ -1,0 +1,48 @@
+.container{
+   text-align: center;
+   padding: 20px;
+   & .task-1{
+      & .btn{
+         width: 80%;
+      }
+      & .colors{
+         display: flex;
+         flex-wrap: wrap;
+         padding-bottom: 20px;
+         justify-content: center;
+      }
+      & .clr{
+         width: 80px;
+         height: 40px;
+         background-color: aqua;
+         margin: 5px;
+      }
+   }
+   & .task-2{
+      & .row{
+         display: flex;
+         justify-content: center;
+         & .trafficLights{
+            border: 1px black solid;
+            padding: 5px;
+            border-radius: 5px;
+            display: flex;
+            & .sirqle{
+               width: 50px;
+               height: 50px;
+               border-radius: 50%;
+               margin: 5px;
+               background-color: gray;
+            }
+            & .color{
+               background-color: red;
+            }
+         }
+         & .btnNext{
+            margin-left: 20px;
+            width: 70px;
+            font-size: 16px;
+         }
+      }
+   }
+}
